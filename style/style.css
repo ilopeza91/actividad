@@ -1,0 +1,215 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/*Ancho del Body y centrado */
+body{
+     
+    max-width: 1500px;
+    margin: 10px auto;    
+}
+
+
+/* Imagen de fondo */
+.contenedor{    
+   background-image: url(../img/computer.jpg);
+   background-size:100%; 
+   background-repeat: no-repeat;
+   background-position:center;
+   position: relative;
+   text-align: center;
+   color: #fff;
+   padding: 15%;
+   margin: 2px;   
+ 
+}
+
+/*Diseño del cuadro */
+.cuadrado{
+    position: absolute;
+    width: 27%;      
+    border: 2px solid #fff;
+    padding: 15px;    
+    top: 30%;
+    left: 50%;
+    
+}
+
+
+/*Diseño Menu Superior*/
+.menu{
+    list-style: none;
+    padding: 3px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*Separar entre cada campo li*/
+.menu li {
+    margin-right: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+/*Afecta el diseño de las a*/
+.menu li a {
+    text-decoration: none;
+    color: floralwhite;
+    padding: 5px;
+     
+  }
+
+  /* Color de fondo negro a los elementos de la listas */
+  .menu li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  /*Efecto de escritura*/
+
+  .efecto-escritura{
+    overflow: hidden;
+    border-right: .15em solid orange; /* Color y grosor del cursor de escritura */
+    white-space: nowrap; /* Evita el salto de línea */    
+    animation: escribir 10s steps(55) infinite;
+    font-family: 'Bebas Neue', sans-serif;
+    
+  }
+
+  /*Duracion */
+
+  @keyframes escribir {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+
+ /*Linea Separador */
+  .separador {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+   }
+
+/*Texto dentro del Seprador*/
+.texto{
+   text-align: center;
+   font-family: 'Bebas Neue', sans-serif;
+
+}
+
+/*Tarjetas se ajusten automaticamente*/
+
+.contenedor-tarjetas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Diseño Tarjetas */
+ .tarjeta{
+   margin: 10px;
+   width: 300px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   padding: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+ }
+
+   
+
+
+/*Texto cursos*/
+.tarjeta h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+       
+}
+
+
+
+/*  Certificaciones */
+.contenedor-certificaciones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contenedor-certificaciones img {
+  margin: 1px;
+  padding: 5px;
+}
+
+
+
+
+
+  /*Pie de Pagina*/
+
+  .pie-de-pagina{
+    background-color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+
+
+/*Pantalla responsive */
+
+  @media screen and (max-width:600px  ) and (min-width:200px){
+
+    .cuadrado {
+        width: 27%;
+    }
+    
+    .efecto-escritura{
+        font-size: 14px;
+       
+    }
+
+    .contenedor-tarjetas{
+        justify-content: center;
+    }
+
+
+    
+  }
+  
+  @media screen and (max-width:900px  ) and (min-width:601px){
+
+    .cuadrado {
+        width: 25%;
+    }
+    
+    .efecto-escritura{
+        font-size: 16px;       
+       
+    }
+
+    
+    
+  }
+
+
+  @media screen and (max-width:1500px  ) and (min-width:800px){ 
+
+  
+    
+  }
+
+
